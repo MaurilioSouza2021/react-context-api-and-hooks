@@ -1,0 +1,27 @@
+Um teste qualquer no arquivo.bash: save: command not found
+Comandos GitHub
+====================
+SSH:
+$ ssh-keygen -t rsa -f '/c/Users/Maurilio/.ssh/github' -C 'maurilio@ideianinja.com.br'
+$ eval "$(ssh-agent -s)"
+
+====================
+Iniciando o Git
+git init
+git config --global user.name "Maurílio de Souza" (se for a primeira vez para o projeto)
+git config --global user.email "maurilio@ideianinja.com.br"
+git remote add origin git@github.com:MaurilioSouza2021/reactNextCurso.git
+
+===================
+Publicando no Git
+eval "$(ssh-agent -s)"
+ssh-add /c/Users/Maurilio/.ssh/github
+
+
+git add .
+git commit -m 'Initial'
+git branch -M master
+git push -u origin master
+
+
+
